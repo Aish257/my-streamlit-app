@@ -1,3 +1,11 @@
+import subprocess  
+import sys  
+
+# Force install matplotlib  
+subprocess.run([sys.executable, "-m", "pip", "install", "matplotlib"])  
+
+# Now import matplotlib  
+import matplotlib.pyplot as plt
 import streamlit as st
 import matplotlib.pyplot as plt
 from datetime import date, datetime
